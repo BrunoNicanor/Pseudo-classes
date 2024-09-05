@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Pseudo-classes</title>
+
+    <style>
+        h1{
+            font-size: 3em;
+        }
+
+        button{
+            font-size: 2em;
+            border-radius: 10px;
+        }
+        button:disabled{
+            background-color: grey;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Estado: disabled</h1>
+    <button>Clique em mim</button><BR></BR>
+    <button disabled>Não me toque!</button>
+    <hr>
+</body>
+</html>
