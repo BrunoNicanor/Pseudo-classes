@@ -7,10 +7,11 @@
 
     <style>
         h1{
-            font-size: 3em;
+            font-size: 3em;/*h1 terá uma fonte de 48px (16 * 3)*/
         }
 
         a{
+            /*Estilizando a tag para parecer um botão*/
             font-size: 2em;
             text-decoration: none;
             border: 2px solid gray;
@@ -20,13 +21,17 @@
         }
 
         a:visited{
+            /*Quando o link definido for acessado,
+            a cor das letras ficará vermelha*/
             color: red;
         }
     </style>
 </head>
 <body>
-    <h1 id="titulo">Estado: visited</h1>
+    <h1>Estado: visited</h1>
     <a href="https://alura.valeonetworks.com/" target="_blank">Link: Alura</a>
+    <!-- Target = blank: Ao ser clicado, 
+    será aberta uma aba separada para acessar o link -->
     <hr>
 </body>
 </html>

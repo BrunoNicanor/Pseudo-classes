@@ -7,27 +7,45 @@
 
     <style>
         h1{
-            font-size: 3em;
+            font-size: 3em;/*h1 terá uma fonte de 48px (16 * 3)*/
         }
 
         input{
+            /*Estilizando Input*/
             font-size: 3em;
             border-radius: 10px;
         }
 
         input:focus{
+            /*Quando o input receber foco,
+            ficará com uma borda levemente azul*/
+
             border: 5px solid rgba(0, 0, 255, 0.5);
+            
+            /*RGBA: As cores vermelho e verde foram zeradas,
+            a cor azul recebeu valor total.
+            O ultimo campo define a opacidade da cor.*/
+            
         }
     </style>
 </head>
 <body>
-    <h1 id="titulo">Estado: hover</h1>
+    <h1>Estado: focus</h1>
+     
+    <!--Placeholder: Para que apareça um texto dentro da caixa de texto.
+
+        Id = meuTexto: Foi definido para que pudesse manipular a caixa de texto 
+    usando Javascript."-->
+    
     <input type="text" placeholder="Digite algo:" id="meuTexto">
     <br><br>
     <input type="text" placeholder="Digite algo:">
     <hr>
-    <script>
+    <script>        
+
+        //Script para o elemento receber foco quando a página for carregada.
         document.getElementById("meuTexto").focus();
+    
     </script>
 </body>
 </html>

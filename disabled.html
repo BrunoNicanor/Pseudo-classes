@@ -7,23 +7,27 @@
 
     <style>
         h1{
-            font-size: 3em;
+            font-size: 3em; /*h1 terá uma fonte de 48px (16 * 3)*/
         }
 
         button{
+            /*Estilizando botão*/
             font-size: 2em;
             border-radius: 10px;
         }
         button:disabled{
+            /*Um botão desabilitado terá cor de fundo cinza e 
+            no cursor aparecerá um sinal de negação.*/
             background-color: grey;
             cursor: not-allowed;
         }
     </style>
 </head>
 <body>
-    <h1 id="titulo">Estado: disabled</h1>
+    <h1>Estado: disabled</h1>
     <button>Clique em mim</button><BR></BR>
     <button disabled>Não me toque!</button>
+    <!-- Disabled: Atributo para desabilitar o botão -->
     <hr>
 </body>
 </html>
