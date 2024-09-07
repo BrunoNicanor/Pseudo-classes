@@ -10,16 +10,20 @@
             font-size: 3em; /*h1 terá uma fonte de 48px (16 * 3)*/
         }
 
-        li{
+        p{
             font-size: 2em; /*Label terá uma fonte de 32px*/
         }
 
-        li:first-child{ /*Seleciona o primeiro elemento "li" de uma lista não ordenada.*/
+        p:before{
+            content: "(Início) ";
+
             color: orange; /*Texto em laranja*/
             font-weight: bold; /*Põe texto em negrito*/
         }
-        
-        li:last-child{ /*Seleciona o ultimo elemento "li" de uma lista não ordenada.*/
+
+        p:after{
+            content: " (Fim)";
+
             color: blue; /*Texto em azul*/
             font-style: italic ; /*Põe texto em itálico*/
         }
@@ -34,13 +38,8 @@
     </style>
 </head>
 <body>
-    <h1>Estado: <span class="orange">first-child</span> / <span class="blue">last-child</span></h1>
-    <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-    </ul>
+    <h1>Estado: <span class="orange">before</span> / <span class="blue">after</span></h1>
+    <p>Texto de conteúdo</p>
     <hr>
 </body>
 </html>
