@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Pseudo-classes</title>
+
+    <style>
+        h1{
+            font-size: 3em; /*h1 terá uma fonte de 48px (16 * 3)*/
+        }
+
+        li{
+            font-size: 2em; /*Label terá uma fonte de 32px*/
+        }
+
+        li:nth-child(2){ /*Seleciona o segundo elemento "li" de uma lista não ordenada.*/
+            color: orange; /*Texto em laranja*/
+            font-weight: bold; /*Põe texto em negrito*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Estado: nth-child(n)</h1>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+    <hr>
+</body>
+</html>
