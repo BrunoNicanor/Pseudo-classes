@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testando Pseudo-classes</title>
 
+    <link rel="stylesheet" href="estilo.css">
+
     <style>
         h1{
             font-size: 3em;/*h1 terá uma fonte de 48px (16 * 3)*/
@@ -41,8 +43,13 @@
     <br><br>
     <input type="text" placeholder="Digite algo:">
     <hr>
-    <script>        
+    <!-- Informativo -->
+    <div id="info">
+        <p><strong>O que faz: </strong>Aplica estilos a um elemento que está focado, geralmente quando um campo de formulário está ativo e pronto para receber a entrada do teclado.</p>
+        <p><strong>Uso comum: </strong>Para destacar campos de formulários ou botões que o usuário selecionou.</p>
+    </div>
 
+    <script>
         //Script para o elemento receber foco quando a página for carregada.
         document.getElementById("meuTexto").focus();
     

@@ -1,0 +1,8 @@
+#info{
+    font-size: 1.5em;
+    font-family: roboto, lato, sans-serif;
+}
+
+p>strong{
+    color: red;
+}
