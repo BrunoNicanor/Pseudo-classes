@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Pseudo-classes</title>
+
+    <style>
+        h1{
+            font-size: 3em; /*h1 terá uma fonte de 48px (16 * 3)*/
+        }
+
+        li{
+            font-size: 2em; /*Parágrafo terá uma fonte de 32px*/
+        }
+
+        li:not(.condicao){
+            /*Texto na cor: Laranja*/
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estado: Not</h1>
+    <ul>
+        <li class="condicao">Texto 1</li>
+        <li>Texto 2</li>
+        <li class="condicao">Texto 3</li>
+    </ul>
+    <hr>
+</body>
+</html>
