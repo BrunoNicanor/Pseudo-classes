@@ -1,4 +1,4 @@
-# Os 10 principais Pseudo-Classes (Estados)
+# As 10 principais Pseudo-Classes (Estados)
 + Para abrir qualquer arquivo HTML, clone o repositório em sua máquina. Abra o arquivo HTML diretamente no seu navegador (basta clicar duas vezes nele).
 
 Vamos falar de um assunto bem legal para quem curte dar aquele toque especial no visual de um site: pseudo-classes em CSS! Elas são como superpoderes que você pode usar para aplicar estilos em elementos quando eles estão em diferentes estados ou situações. Aqui estão as 10 principais pseudo-classes que você vai adorar conhecer:
