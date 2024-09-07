@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Pseudo-classes</title>
+
+    <style>
+        h1{
+            font-size: 3em; /*h1 terá uma fonte de 48px (16 * 3)*/
+        }
+
+        label{
+            font-size: 2em; /*Label terá uma fonte de 32px*/
+        }
+
+        input[type="checkbox"]:checked + label { /*Seleciona label adjacente (logo abaixo) ao 
+                                                input do tipo checkbox que está em estado
+                                                "marcado"*/
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estado: checked</h1>
+    <!-- O id "check1" conecta o input na label através do atributo "for" da label.-->
+    <!-- Checked: marca o checkbox no momento que a página é carregada.-->
+    <input type="checkbox" name="" id="check1" checked>
+    <label for="check1">Eu estou marcado</label>
+    
+    <BR></BR>
+    
+    <input type="checkbox" name="" id="check2">
+    <label for="check2">Eu estou marcado</label>
+
+    <hr>
+</body>
+</html>
