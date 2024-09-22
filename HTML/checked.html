@@ -28,12 +28,7 @@
     <!-- O id "check1" conecta o input na label através do atributo "for" da label.-->
     <!-- Checked: marca o checkbox no momento que a página é carregada.-->
     <input type="checkbox" name="" id="check1" checked>
-    <label for="check1">Eu estou marcado</label>
-    
-    <BR></BR>
-    
-    <input type="checkbox" name="" id="check2">
-    <label for="check2">Eu estou marcado</label>
+    <label for="check1">Eu <span id="texto"></span>estou marcado</label>
 
     <hr>
     <!-- Informativo -->
@@ -41,5 +36,22 @@
         <p><strong>O que faz: </strong>Aplica estilos a caixas de seleção (`checkbox`) ou botões de rádio (`radio`) que estão marcados.</p>
         <p><strong>Uso comum: </strong>Para customizar a aparência de elementos selecionados em formulários.</p>
     </div>
+    <script>
+        /*Este script verifica se o input do tipo checkbox está marcdo ou não,
+        se estiver marcado, será o texto do input mudará para 'Eu Não estou marcado',
+        senão aparacera 'Eu estou marcado'*/
+        let marcado = document.getElementById("check1");
+        let texto = document.getElementById("texto");
+
+        marcado.addEventListener('change', function(){
+            if(this.checked){
+            texto.innerHTML = "";
+        }   
+            else{
+                texto.innerHTML = "Não ";
+            }
+        });
+        
+    </script>
 </body>
 </html>
